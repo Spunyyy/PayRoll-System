@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="PayRollControls.ShiftControlView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PayRollControls"
+             mc:Ignorable="d" 
+                          d:DesignHeight="100" d:DesignWidth="500">
+    <UserControl.Resources>
+        <Style x:Key="CenteredTextBlockStyle" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+    </UserControl.Resources>
+    <Border BorderBrush="Black" BorderThickness="0.5">
+        <Grid x:Name="Grid">
+            <TextBlock x:Name="nameTextBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
+            <TextBlock x:Name="dateTextBlock" HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
+            <TextBlock x:Name="startShiftTextBlock" HorizontalAlignment="Left" Margin="170,35,0,0" Style="{StaticResource CenteredTextBlockStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+            <TextBlock x:Name="endShiftTextBlock" HorizontalAlignment="Left" Margin="250,35,0,0" Style="{StaticResource CenteredTextBlockStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+            <TextBlock x:Name="startBreakTextBlock" HorizontalAlignment="Left" Margin="330,35,0,0" Style="{StaticResource CenteredTextBlockStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+            <TextBlock x:Name="endBreakTextBlock" HorizontalAlignment="Left" Margin="410,35,0,0" Style="{StaticResource CenteredTextBlockStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+            <TextBlock HorizontalAlignment="Left" Margin="170,17,0,0" TextWrapping="Wrap" Text="Start shift" VerticalAlignment="Top" Width="80" Style="{StaticResource CenteredTextBlockStyle}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="250,17,0,0" TextWrapping="Wrap" Text="End shift" VerticalAlignment="Top" Width="80" Style="{StaticResource CenteredTextBlockStyle}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="330,17,0,0" TextWrapping="Wrap" Text="Start break" VerticalAlignment="Top" Width="80" Style="{StaticResource CenteredTextBlockStyle}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="410,17,0,0" TextWrapping="Wrap" Text="End break" VerticalAlignment="Top" Width="80" Style="{StaticResource CenteredTextBlockStyle}"/>
+        </Grid>
+    </Border>
+
+</UserControl>

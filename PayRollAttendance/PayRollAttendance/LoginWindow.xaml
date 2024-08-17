@@ -1,0 +1,17 @@
+﻿<Window x:Class="PayRollAttendance.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PayRollAttendance"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="LoginWindow" Height="154" Width="284.8">
+    <Grid>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="78,17,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="57,47,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="emailTextBox" HorizontalAlignment="Left" Height="23" Margin="124,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+        <PasswordBox x:Name="empPasswordBox" HorizontalAlignment="Left" Margin="124,47,0,0" VerticalAlignment="Top" Width="125" Height="26"/>
+        <Button x:Name="loginButton" Content="Login" HorizontalAlignment="Left" Margin="18,78,0,0" VerticalAlignment="Top" Width="231" Height="36" Click="loginButton_Click"/>
+    </Grid>
+</Window>

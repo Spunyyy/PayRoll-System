@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="PayRollControls.ShiftControlEdit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PayRollControls"
+             mc:Ignorable="d" 
+                                       d:DesignHeight="100" d:DesignWidth="500">
+    <UserControl.Resources>
+        <Style x:Key="CenteredTextBlockStyle" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="CenteredTextBoxStyle" TargetType="TextBox">
+            <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+    </UserControl.Resources>
+    <Border BorderBrush="Black" BorderThickness="0.5">
+        <Grid x:Name="Grid">
+            <TextBlock x:Name="nameTextBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
+            <TextBlock x:Name="dateTextBlock" HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
+
+            <TextBlock HorizontalAlignment="Left" Margin="208,36,0,0" Style="{StaticResource CenteredTextBlockStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="4" Text=":" FontSize="16"/>
+            <TextBox x:Name="sshTextBox" HorizontalAlignment="Left" Margin="186,36,0,0" Style="{StaticResource CenteredTextBoxStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" Height="24" Text="" Background="#00000000" BorderBrush="#00000000" FontSize="16" LostFocus="sshTextBox_LostFocus" GotFocus="sshTextBox_GotFocus" />
+            <TextBox x:Name="ssmTextBox" HorizontalAlignment="Left" Margin="210,36,0,0" Style="{StaticResource CenteredTextBoxStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" Height="24" Text="" Background="#00000000" BorderBrush="#00000000" FontSize="16" LostFocus="ssmTextBox_LostFocus" GotFocus="ssmTextBox_GotFocus" />
+
+            <TextBlock HorizontalAlignment="Left" Margin="288,36,0,0" Style="{StaticResource CenteredTextBlockStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="4" Text=":" FontSize="16"/>
+            <TextBox x:Name="eshTextBox" HorizontalAlignment="Left" Margin="266,36,0,0" Style="{StaticResource CenteredTextBoxStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" Height="24" Text="" Background="#00000000" BorderBrush="#00000000" FontSize="16" LostFocus="eshTextBox_LostFocus" GotFocus="eshTextBox_GotFocus" />
+            <TextBox x:Name="esmTextBox" HorizontalAlignment="Left" Margin="290,36,0,0" Style="{StaticResource CenteredTextBoxStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" Height="24" Text="" Background="#00000000" BorderBrush="#00000000" FontSize="16" LostFocus="esmTextBox_LostFocus" GotFocus="esmTextBox_GotFocus" />
+
+            <TextBlock HorizontalAlignment="Left" Margin="368,36,0,0" Style="{StaticResource CenteredTextBlockStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="4" Text=":" FontSize="16"/>
+            <TextBox x:Name="sbhTextBox" HorizontalAlignment="Left" Margin="346,36,0,0" Style="{StaticResource CenteredTextBoxStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" Height="24" Text="" Background="#00000000" BorderBrush="#00000000" FontSize="16" LostFocus="sbhTextBox_LostFocus" GotFocus="sbhTextBox_GotFocus" />
+            <TextBox x:Name="sbmTextBox" HorizontalAlignment="Left" Margin="370,36,0,0" Style="{StaticResource CenteredTextBoxStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" Height="24" Text="" Background="#00000000" BorderBrush="#00000000" FontSize="16" LostFocus="sbmTextBox_LostFocus" GotFocus="sbmTextBox_GotFocus" />
+
+            <TextBlock HorizontalAlignment="Left" Margin="448,36,0,0" Style="{StaticResource CenteredTextBlockStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="4" Text=":" FontSize="16"/>
+            <TextBox x:Name="ebhTextBox" HorizontalAlignment="Left" Margin="426,36,0,0" Style="{StaticResource CenteredTextBoxStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" Height="24" Text="" Background="#00000000" BorderBrush="#00000000" FontSize="16" LostFocus="ebhTextBox_LostFocus" GotFocus="ebhTextBox_GotFocus" />
+            <TextBox x:Name="ebmTextBox" HorizontalAlignment="Left" Margin="450,36,0,0" Style="{StaticResource CenteredTextBoxStyle}" TextWrapping="Wrap" VerticalAlignment="Top" Width="24" Height="24" Text="" Background="#00000000" BorderBrush="#00000000" FontSize="16" LostFocus="ebmTextBox_LostFocus" GotFocus="ebmTextBox_GotFocus" />
+
+            <TextBlock HorizontalAlignment="Left" Margin="170,17,0,0" TextWrapping="Wrap" Text="Start shift" VerticalAlignment="Top" Width="80" Style="{StaticResource CenteredTextBlockStyle}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="250,17,0,0" TextWrapping="Wrap" Text="End shift" VerticalAlignment="Top" Width="80" Style="{StaticResource CenteredTextBlockStyle}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="330,17,0,0" TextWrapping="Wrap" Text="Start break" VerticalAlignment="Top" Width="80" Style="{StaticResource CenteredTextBlockStyle}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="410,17,0,0" TextWrapping="Wrap" Text="End break" VerticalAlignment="Top" Width="80" Style="{StaticResource CenteredTextBlockStyle}"/>
+        </Grid>
+    </Border>
+
+</UserControl>
